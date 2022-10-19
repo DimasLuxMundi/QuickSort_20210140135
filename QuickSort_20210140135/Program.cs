@@ -10,6 +10,7 @@ namespace QuickSort_20210140135
     {
         //array of integers to hold values
         private int[] arr = new int[20];
+        private int cmp_count = 0; //Number of comparison
         
         static void Main(string[] args)
         {
