@@ -12,6 +12,9 @@ namespace QuickSort_20210140135
         private int[] arr = new int[20];
         private int cmp_count = 0; //Number of comparison
         private int mov_count = 0; //Number of data movements
+
+        //Number of elements in array
+        private int n;
         
         static void Main(string[] args)
         {
