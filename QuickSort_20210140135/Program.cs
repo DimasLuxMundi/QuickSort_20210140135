@@ -22,6 +22,7 @@ namespace QuickSort_20210140135
             {
                 Console.Write("Enter the number of elements in the array : ");
                 string s = Console.ReadLine();
+                
                 if (n <= 20)
                     break;
                 else
@@ -53,7 +54,7 @@ namespace QuickSort_20210140135
         public void q_sort(int low, int high)
         {
             int pivot, i, j;
-            if (low < high)
+            if (low > high)
                 return;
 
             //Partition the list into two parts:
@@ -129,7 +130,18 @@ namespace QuickSort_20210140135
         }
         static void Main(string[] args)
         {
-
+            //Declaring the object of the class
+            Program myList = new Program();
+            //Accepts array element
+            myList.input();
+            //Calling the sorting function
+            //First call to Quick sort Algorithm
+            myList.q_sort(0, myList.getSize() - 1);
+            //display sorted array
+            myList.display();
+            //to exit from the console
+            Console.WriteLine("\nPress enter to exit.");
+            Console.Read();
         }
     }
 }
