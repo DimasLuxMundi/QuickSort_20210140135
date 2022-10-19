@@ -122,8 +122,14 @@ namespace QuickSort_20210140135
             Console.WriteLine("\nNumber of comparisons: " + cmp_count);
             Console.WriteLine("\nNumber of data movements: " + mov_count);
         }
+
+        int getSize()
+        {
+            return (n);
+        }
         static void Main(string[] args)
         {
+
         }
     }
 }
